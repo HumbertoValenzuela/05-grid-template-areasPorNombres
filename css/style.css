@@ -1,0 +1,35 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;  
+}
+h1 {
+    margin: 0;
+}
+img {
+    width: 100%;
+}
+
+/* index2 grid-template-areas sin usar los grid-templates-column*/
+.contenedor-media {
+    margin: 0 auto;
+    max-width: 800px;
+    display: grid;
+    grid-template-areas: 
+    "titulo titulo titulo titulo"
+    "imagen desc desc desc"
+    ;
+    gap: 1rem;
+}
+
+
+.titulo {
+   grid-area: titulo;
+}
+
+.imagen {
+    grid-area: imagen;
+}
+.descripcion {
+    grid-area: desc;
+}
